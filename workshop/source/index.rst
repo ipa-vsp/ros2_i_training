@@ -14,6 +14,11 @@ Session 1 - ROS2 Concepts and Fundamentals
    Exercise 1.1 - ROS2-Simple-Publisher-Subscriber <_source/basics/ROS2-Simple-Publisher-Subscriber.md>
    Exercise 1.2 - ROS2-Turtlesim <_source/basics/ROS2-Turtlesim.md>
 
+Session 2 - Ros2 Concepts and Fundementals Advanced(Optional)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. toctree::
+   ::maxdepth: 1   
+
 Session 2 - ROS2 Navigation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. toctree::
