@@ -16,6 +16,7 @@ During this tutorial, you will learn how to navigate through your ROS2 system. I
 
 Before starting make sure that your system is aware of the latest ROS2 packages:
 
+
 ```bash
 sudo apt update
 rosdep update
@@ -33,9 +34,8 @@ First of all, you have to source the ROS installation and its install workspace!
 
 ***Note: This has to be done for every new terminal window.***
 
-```bash
 We are using **jazzy** as ROS Distro
-
+```bash
 source /opt/ros/jazzy/setup.bash
 ```
 or

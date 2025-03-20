@@ -273,7 +273,7 @@ rosdep install --from-paths src --ignore-src -r --rosdistro <distro> -y
 Substitute <distro> with the current version of ROS2 you are running on. Ex: `jazzy`
 
 From the same location, build the workspace:
-```bash
+ 
 colcon build --symlink-install
 ```
 Now we need to source this workspace in order to be able to discover the executable that we just built:
