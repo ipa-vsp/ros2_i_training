@@ -17,22 +17,32 @@ Session 1 - ROS2 Concepts and Fundamentals
 Session 2 - Ros2 Concepts and Fundementals Advanced(Optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. toctree::
-   ::maxdepth: 1   
+   :maxdepth: 1   
 
-Session 2 - ROS2 Navigation
+Session 3 - ROS2 Navigation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. toctree::
    :maxdepth: 1
 
-   Exercise 2.1 - ROS2-TF2 <_source/navigation/ROS2-TF2.md>
-   Exercise 2.2 - ROS2-Turtlebot <_source/navigation/ROS2-Turtlebot.md>
-   Exercise 2.3 - ROS2-Cartographer <_source/navigation/ROS2-Cartographer.md>
-   Exercise 2.4 - ROS2-Navigation <_source/navigation/ROS2-Navigation.md>
+   Exercise 3.1 - ROS2-TF2 <_source/navigation/ROS2-TF2.md>
+   Exercise 3.2 - ROS2-Turtlebot <_source/navigation/ROS2-Turtlebot.md>
+   Exercise 3.3 - ROS2-Cartographer <_source/navigation/ROS2-Cartographer.md>
+   Exercise 3.4 - ROS2-Navigation <_source/navigation/ROS2-Navigation.md>
 
-Session 3 - ROS2 Manipulation
+Session 4 - ROS2 Manipulation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. toctree::
    :maxdepth: 1
 
-   Exercise 3 - ROS2-Moveit2 <_source/manipulation/readme.md>
+   Exercise 4 - ROS2-Moveit2 <_source/manipulation/readme.md>
+
+Session 5 - ROS2 URDF
+~~~~~~~~~~~~~~~~~~~~~~
+.. toctree::
+   :maxdepth: 1
+
+   Exercise 5 - ROS2 URDF <_source/urdf/excercise.md>
+
+   
+
    
