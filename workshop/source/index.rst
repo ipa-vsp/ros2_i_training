@@ -41,7 +41,8 @@ Session 5 - ROS2 URDF
 .. toctree::
    :maxdepth: 1
 
-   Exercise 5 - ROS2 URDF <_source/urdf/excercise.md>
+   ROS2 URDF_Introduction <_source/urdf/introduction.md>
+   Exercise 5 - Ros2-Cartesian Robot <_source/urdf/cartesian_tutorial.md>
 
    
 
