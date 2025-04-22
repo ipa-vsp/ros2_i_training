@@ -11,10 +11,11 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 from sphinx import version_info as sphinx_version_info
+
 # -- Project information -----------------------------------------------------
 project = 'ROS2 workshop'
-copyright = '2021, Fraunhofer IPA'
-author = 'Ragesh Ramachandran'
+copyright = '2025, Fraunhofer IPA'
+author = 'Ragesh Ramachandran, Aswathy Ramachandran, Yasmine Makkaoui'
 # -- General configuration ---------------------------------------------------
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -30,6 +31,7 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md', 'exercise']
 extensions = ['sphinx.ext.githubpages']
+
 
 if sphinx_version_info >= (1, 4):
   extensions += ['recommonmark']
@@ -62,6 +64,7 @@ html_theme_options = {
     'includehidden': True,
     'titles_only': False,
 }
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

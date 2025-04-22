@@ -1,4 +1,5 @@
 workshop/build/*
+workshop/sphinxEnv
 .vscode
 logs
 *.pdf
