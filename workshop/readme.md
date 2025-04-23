@@ -2,13 +2,42 @@
 
 The workshop documents are written in `Markdown` language and built using [Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html?) documentation generator.
 
-## Usage
+## Generate the docs
 ### Install dependencies
 
+#### Clone the repository
+```bash
+git clone <repo-name>
+```
+
+#### Setup the virtual environment in the workshop folder to generate the docs
+Navigate to the workshop folder
+```bash
+cd ros2_i_training/workshop
+```
+
+Create the python environment and activate it
+```bash
+python3 -m venv sphinxEnv
+source sphinxEnv/bin/activate
+```
+
+install the dependencies from the requirements.txt
 ````bash
-cd ~/ros2_i_training/workshop/
 python3 -m pip install -r requirements.txt
 ````
+
+### Build the html doc
+From the workshop directory:
+ ```bash
+ make html
+ ```
+
+### Open the docs
+From the workshop directory:
+```bash
+xdg-open build/html/index.html
+```
 
 ### To add new content
 Place the content source in the following folders in the appropriate session.

@@ -4,11 +4,11 @@
 
 ## Introduction
 
-As we understood from the lectures, nodes are the fundamental units in ROS2 which are usually written to perform a specific task. They can be created in a few different ways such as- 
+As we understood from the lectures, nodes are the fundamental units in ROS2 which are usually written to perform a specific task. They can be created in a few different ways, some of them are: 
 1. As simple in-line code in a script,
 2. As local functions, and
 3. As class objects   
-... among others
+
 
 We will be using the 3rd method, though it is the more complex, so as to get better used to this concept.
 
@@ -16,12 +16,13 @@ We start by writing two separate simple nodes, one that includes only publisher 
 
 The first step is to create a python package to house all our nodes. You can do so using the command
 ```bash
-$ ros2 pkg create --build-type ament_python <package_name>
+ros2 pkg create --build-type ament_python <package_name>
 ```
 
-(Make sure first that ROS2 is sourced in every new terminal)
+***Note: Ensure first that ROS2 is sourced in every new terminal***
 
-Make sure you run this command in the *src* directory of your workspace. You can use any package name you want, but for reference in this document, we call it `wshop_nodes`.
+- Make sure you run this command in the *src* directory of your workspace. You can use any package name you want, but for reference in this document, we call it `wshop_nodes`. 
+
 
 ## 1. Publisher Node
 
@@ -266,26 +267,28 @@ entry_points={
 ## 3 Build and run
 
 Before building, it is always good to check if all dependencies have been installed. We execute the following from the **base workspace folder** (i.e. just above the src folder of your **workspace**):
-
-`rosdep install --from-paths src --ignore-src -r --rosdistro <distro> -y`   
-Substitute <distro> with the current version of ROS2 you are running on. Ex: `foxy`
+```bash
+rosdep install --from-paths src --ignore-src -r --rosdistro <distro> -y   
+```
+Substitute <distro> with the current version of ROS2 you are running on. Ex: `jazzy`
 
 From the same location, build the workspace:
-
-`colcon build --symlink-install`
-
+ 
+colcon build --symlink-install
+```
 Now we need to source this workspace in order to be able to discover the executable that we just built:
 
-`source install/local_setup.bash`
-
+```bash
+source install/local_setup.bash
+```
 Finally, we are ready to run an executable. Recalling from section **1.3**, the name we assigned to the executable with the publisher is `talker`. So we run this: 
-
-`ros2 run wshop_nodes talker`
-
+```bash
+ros2 run wshop_nodes talker
+```
 Open another terminal and similarly source ros2 and this workspace to run the subscriber executable:
-
-`ros2 run wshop_nodes listener`
-
+```bash
+ros2 run wshop_nodes listener
+````
 
 
 ## 4 Composed nodes
