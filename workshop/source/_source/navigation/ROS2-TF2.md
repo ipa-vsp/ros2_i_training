@@ -5,8 +5,7 @@ This tutorial will help you understand the flexibility of transforms with the TF
 
 For this tutorial, we will use the Turtlesim again. This time, we will insert a second turtle into the simulation. As you drive the first turtle around with keyboard teleop, the second turte will follow it closely. In order to do this, the second turtle needs to know where the first one is, w.r.t. its own coordinate frames. This can be easily achieved using the TF2 library.
 
-The example code is based on [tf2_example](https://github.com/ros2/geometry2/tree/eloquent/examples_tf2_py) and is tested with ROS 2 Foxy.   
-
+The example code is based on [tf2_example](https://github.com/ros2/geometry2/tree/jazzy/examples_tf2_py) and is tested with ROS2 Jazzy.   
 
 
 ## 1. Dynamic TF Broadcaster

@@ -7,8 +7,10 @@ Turtlesim is the Flagship example application for ROS and ROS 2. It demonstrates
 This workshop encourages you to refer to the cheat sheet for the syntax and type the commands on your own in order to learn by trial and error. Make use of the `--help` option for commands as well. However, solutions are also provided in the end. Feel free to approach this any way as you wish.      
 
 <!--## Requirements
-`sudo apt install ros-foxy-turtlesim`   
-Make sure ROS 2 is sourced in every terminal you open.   -->
+
+`sudo apt install ros-jazzy-turtlesim`   
+Make sure ROS2 is sourced in every terminal you open.   -->
+
 
 ## 2. Starting the Turtle simulator
 

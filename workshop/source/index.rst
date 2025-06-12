@@ -14,20 +14,33 @@ Session 1 - ROS 2 Concepts and Fundamentals
    Exercise 1.1 - ROS-2-Simple-Publisher-Subscriber <_source/basics/ROS2-Simple-Publisher-Subscriber.md>
    Exercise 1.2 - ROS-2-Turtlesim <_source/basics/ROS2-Turtlesim.md>
 
-Session 2 - ROS 2 Navigation
+Session 2 - Ros2 Concepts and Fundementals Advanced(Optional)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. toctree::
+   :maxdepth: 1   
+
+Session 3 - ROS2 Navigation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. toctree::
+   :maxdepth: 1
+
+   Exercise 3.1 - ROS2-TF2 <_source/navigation/ROS2-TF2.md>
+   Exercise 3.2 - ROS2-Turtlebot <_source/navigation/ROS2-Turtlebot.md>
+   Exercise 3.3 - ROS2-Cartographer <_source/navigation/ROS2-Cartographer.md>
+   Exercise 3.4 - ROS2-Navigation <_source/navigation/ROS2-Navigation.md>
+
+Session 4 - ROS2 Manipulation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. toctree::
    :maxdepth: 1
 
-   Exercise 2.1 - ROS-2-TF2 <_source/navigation/ROS2-TF2.md>
-   Exercise 2.2 - ROS-2-Turtlebot <_source/navigation/ROS2-Turtlebot.md>
-   Exercise 2.3 - ROS-2-Cartographer <_source/navigation/ROS2-Cartographer.md>
-   Exercise 2.4 - ROS-2-Navigation <_source/navigation/ROS2-Navigation.md>
+   Exercise 4 - ROS2-Moveit2 <_source/manipulation/readme.md>
 
-Session 3 - ROS 2 Manipulation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Session 5 - ROS2 URDF
+~~~~~~~~~~~~~~~~~~~~~~
 .. toctree::
    :maxdepth: 1
 
-   Exercise 3 - ROS-2-Moveit2 <_source/manipulation/readme.md>
+   ROS2 URDF_Introduction <_source/urdf/introduction.md>
+   Exercise 5 - Ros2-Cartesian Robot <_source/urdf/cartesian_tutorial.md>
    
