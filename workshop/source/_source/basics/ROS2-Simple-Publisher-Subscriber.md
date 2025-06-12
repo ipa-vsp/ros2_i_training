@@ -1,10 +1,11 @@
 
-# Understanding ROS2 nodes with a simple Publisher - Subscriber pair
-**Based on the [ROS2 Tutorials](https://index.ros.org/doc/ros2/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber/)**
+# Understanding ROS 2 nodes with a simple Publisher - Subscriber pair
+**Based on the [ROS 2 Tutorials](https://docs.ros.org/en/foxy/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.html)**
 
 ## Introduction
 
 As we understood from the lectures, nodes are the fundamental units in ROS2 which are usually written to perform a specific task. They can be created in a few different ways, some of them are: 
+
 1. As simple in-line code in a script,
 2. As local functions, and
 3. As class objects   
@@ -26,7 +27,7 @@ ros2 pkg create --build-type ament_python <package_name>
 
 ## 1. Publisher Node
 
-The publisher and subscriber nodes used here are in fact the [example code](https://github.com/ros2/examples/blob/master/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py) that ROS2 provides.
+The publisher and subscriber nodes used here are in fact the [example code](https://github.com/ros2/examples/blob/master/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py) that ROS 2 provides.
 
 We first present the code completely, and then discuss the interesting parts:
 
@@ -84,7 +85,7 @@ from rclpy.node import Node
 from std_msgs.msg import String
 ```
 
-`rclpy` is the *ROS2 Client Library* that provides the API for invoking ROS2 through Python.   
+`rclpy` is the *ROS 2 Client Library* that provides the API for invoking ROS 2 through Python.   
 `Node` is the main class which will be inherited here to instantiate our own node.   
 `std_msgs.msg` is the library for standard messages that includes the `String` message type which we use in this node. This has to be declared as a dependency in `package.xml`, which we do next.   
 
@@ -99,7 +100,7 @@ class MinimalPublisher(Node):
         self.i = 0
 ```
 As explained above, we create a subclass of type `MinimalPublisher` using the base class `Node`.         
-In the constructor `__init__()`, we pass the name of the node that we ish to assign to the constructer of the parent class using `super()`. The parent class `Node` takes care of actually assigning this string as a name.    
+In the constructor `__init__()`, we pass the name of the node that we wish to assign to the constructer of the parent class using `super()`. The parent class `Node` takes care of actually assigning this string as a name.    
 `self.publisher_ = self.create_publisher(String, 'topic', 10)` This line actually creates a publisher, using the message type `String` that we imported, with the name `topic` that we choose and having a queue size of `10`. Queue size is the size of the output buffer. The commands used till now are typical when creating a subscriber. What follows next is only logic that is relevant to this node, and you may implement this in any way depending on your requirements.
 
 ```Python
@@ -175,12 +176,12 @@ entry_points={
 ```
 In this case, `talker` is the name we assign to the executable, `wshop_nodes` is the package, `minimal_publisher` is the name of the python file and `main` is the entry point to this executable (i.e. main function). Replace with the names you chose accordingly.
 
-You can use the same prototype to declare executables in all ROS2 python packages.
+You can use the same prototype to declare executables in all ROS 2 python packages.
 
 
 ### 1.4 Setup.cfg
 
-The final configuration file is `setup.cfg`, which, fortunately for us, is already configured properly and needs no more changes! These settings indicate to ROS2 where the executable shall be put for discovery after building the package.
+The final configuration file is `setup.cfg`, which, fortunately for us, is already configured properly and needs no more changes! These settings indicate to ROS 2 where the executable shall be put for discovery after building the package.
 
 ## 2 Subscriber Node
 
@@ -243,14 +244,14 @@ self.subscription = self.create_subscription(
 
 The first parameter to pass to the function is the msg type, the second is the name of the topic - this should be the same as declared in the publisher, the third is the callback function for the subscriber and the last is the message buffer size.
 
-The nxt part to understand is the callback function.
+The next part to understand is the callback function.
 
 ```Python
 def listener_callback(self, msg):
     self.get_logger().info('I heard: "%s"' % msg.data)
 ```
 
-The parameter that is automatically passed to this dunction is the incoming message. In this case, it is simply printed to console.
+The parameter that is automatically passed to this function is the incoming message. In this case, it is simply printed to console.
 
 ### 2.2 Declaring the executable
 
@@ -267,10 +268,12 @@ entry_points={
 ## 3 Build and run
 
 Before building, it is always good to check if all dependencies have been installed. We execute the following from the **base workspace folder** (i.e. just above the src folder of your **workspace**):
+
 ```bash
 rosdep install --from-paths src --ignore-src -r --rosdistro <distro> -y   
 ```
 Substitute <distro> with the current version of ROS2 you are running on. Ex: `jazzy`
+
 
 From the same location, build the workspace:
  
@@ -282,6 +285,7 @@ Now we need to source this workspace in order to be able to discover the executa
 source install/local_setup.bash
 ```
 Finally, we are ready to run an executable. Recalling from section **1.3**, the name we assigned to the executable with the publisher is `talker`. So we run this: 
+
 ```bash
 ros2 run wshop_nodes talker
 ```

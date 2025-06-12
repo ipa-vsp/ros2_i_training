@@ -1,18 +1,18 @@
-.. ROS2 workshop index page, created by
+.. ROS 2 workshop index page, created by
    sphinx-quickstart on Fri Feb  5 13:33:39 2021.
    Each new `Session` should contain the root [toctree](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree) directive.
 
-Welcome to ROS2 workshop!
-=========================
+Welcome to ROS 2 workshop!
+==========================
 
-Session 1 - ROS2 Concepts and Fundamentals
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Session 1 - ROS 2 Concepts and Fundamentals
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. toctree::
    :maxdepth: 1
 
-   Exercise 1.0 - ROS2 filesystem <_source/basics/ROS2-Filesystem.md>
-   Exercise 1.1 - ROS2-Simple-Publisher-Subscriber <_source/basics/ROS2-Simple-Publisher-Subscriber.md>
-   Exercise 1.2 - ROS2-Turtlesim <_source/basics/ROS2-Turtlesim.md>
+   Exercise 1.0 - ROS-2-Filesystem <_source/basics/ROS2-Filesystem.md>
+   Exercise 1.1 - ROS-2-Simple-Publisher-Subscriber <_source/basics/ROS2-Simple-Publisher-Subscriber.md>
+   Exercise 1.2 - ROS-2-Turtlesim <_source/basics/ROS2-Turtlesim.md>
 
 Session 2 - Ros2 Concepts and Fundementals Advanced(Optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,7 +43,4 @@ Session 5 - ROS2 URDF
 
    ROS2 URDF_Introduction <_source/urdf/introduction.md>
    Exercise 5 - Ros2-Cartesian Robot <_source/urdf/cartesian_tutorial.md>
-
-   
-
    

@@ -8,7 +8,6 @@ For this tutorial, we will use the Turtlesim again. This time, we will insert a 
 The example code is based on [tf2_example](https://github.com/ros2/geometry2/tree/jazzy/examples_tf2_py) and is tested with ROS2 Jazzy.   
 
 
-
 ## 1. Dynamic TF Broadcaster
 
 The word dynamic indicates that the transform that is being published is constantly changing. This is useful for tracking moving parts. In this case, we continuously broadcast the current position of the first turtle.
@@ -84,11 +83,10 @@ if __name__ == "__main__":
     main()
 
 ```
-Next, add this script to the 
 
 ### 1.1 Explanation
 
-This follows the same basic structure for a ROS2 node. The TF2 specific lines will be explained.
+This follows the same basic structure for a ROS 2 node. The TF2 specific lines will be explained.
 
 ```python
 from geometry_msgs.msg import TransformStamped
@@ -96,7 +94,7 @@ from scipy.spatial.transform import Rotation as R
 from tf2_ros.transform_broadcaster import TransformBroadcaster
 ```
 
-Imports the modules required for TF2. Scipy is used to convert from Euler angles to quaternion since the `tf_conversions` package has not been ported over to ROS2 yet.
+Imports the modules required for TF2. Scipy is used to convert from Euler angles to quaternion since the `tf_conversions` package has not been ported over to ROS 2 yet.
 
 ```python
 self.tfb_ = TransformBroadcaster(self)

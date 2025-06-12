@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.abspath('.'))
 from sphinx import version_info as sphinx_version_info
 
 # -- Project information -----------------------------------------------------
+
 project = 'ROS2 workshop'
 copyright = '2025, Fraunhofer IPA'
 author = 'Ragesh Ramachandran, Aswathy Ramachandran, Yasmine Makkaoui'
@@ -97,4 +98,5 @@ html_context = {
     "css_files": ['_static/override.css'],
 }
 # Output file base name for HTML help builder.
+
 htmlhelp_basename = 'ROS2 workshop' """
